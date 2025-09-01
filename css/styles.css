@@ -81,3 +81,11 @@ footer.contenidoDelPie{
 main.cuerpo{
     background-image: url("../img/fondoPag.png");
 }
+section.masvendidos1{
+    display: flex;
+    justify-content: space-between;
+}
+img.album{
+    height: 300px;
+    width: 300px;
+}
