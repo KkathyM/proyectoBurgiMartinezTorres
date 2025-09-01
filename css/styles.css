@@ -89,3 +89,103 @@ img.album{
     height: 300px;
     width: 300px;
 }
+a.botonvermas{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #E2AC37;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 15px;
+    margin: 10px 2px 10px 0px;
+    padding: 2px;
+    border:1px solid rgba(255,255,255,0.2);
+    text-decoration: none;
+}
+
+/* PAGINA PRODUCT */
+section.mainproduct{
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0px 25px 0px;
+    border-radius: 25px;
+    margin: 50px 150px 50px 150px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+section.descripcionproduct{
+    height: 300px;
+}
+img.portadaproduct{
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.4);
+}
+h2.tituloalbum{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white
+}
+h3.marcaalbum{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #FD8851;
+}
+p.descripcionalbum{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke
+}
+h3.precioalbum{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #E2AC37
+}
+h3.infoalbum{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke
+}
+article.hastag{
+    display: flex;
+    justify-content: flex-start;
+}
+span.hastagg{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #E2AC37;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 15px;
+    margin: 10px 2px 10px 0px;
+    padding: 5px;
+    border:1px solid rgba(255,255,255,0.2) ;
+}
+article.review{
+    display: flex;
+    justify-content: flex-start;
+        font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 15px;
+    margin: 10px 2px 10px 0px;
+    padding: 8px;
+    border:1px solid rgba(255,255,255,0.2);
+    justify-content: flex-start;
+}
