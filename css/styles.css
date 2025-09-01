@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header.contenedorPadre{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px 20px;
+    background-color: #130102;
+    border-bottom: 0.3px solid rgba(250,250,250, 0.3);
+}
+
+img.logoPrincipal{
+    width: auto;
+    height: 70px;
+    display: block;
+}
+
+img.logoContenido{
+    display: flex;
+    align-items: center;
+}
+
+ul.navlinks{
+    list-style: none;
+    display: flex;
+}
+.linksNavegacion a{
+    color: #f3f3f6;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "Inter", "Roboto", "Arial", sans-serif;
+    margin-left: 16px;  
+}
+
+/* Footer */
+footer.pieDePag{
+    background-color: #130102;
+    border-top: 0.3px solid rgba(250,250,250, 0.3);
+    padding: 14px 18px;
+    color: #f3f3f6;
+    font-family: "Inter", "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer.contenidoDelPie{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: right;
+    gap: 8px;
+}
+
+.footerContenido p{
+    margin: 0;
+    font-weight: 500;
+}
+
+.integrantes{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+/* CUERPO */
+
+main.cuerpo{
+    background-image: url("../img/fondoPag.png");
+}
