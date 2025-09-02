@@ -177,7 +177,7 @@ span.hastagg{
 article.review{
     display: flex;
     justify-content: flex-start;
-        font-family: "Nunito", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -188,4 +188,105 @@ article.review{
     padding: 8px;
     border:1px solid rgba(255,255,255,0.2);
     justify-content: flex-start;
+}
+/* PAGINA LOGIN */
+div.paglogin{
+    background-image: url(../img/DISEÑO2.png);
+    border-radius: 25px;
+    display: flex;
+    border: 2px solid rgba(255,255,255,0.3);
+    height: 400px;
+    width: 90%;
+    margin: 100px;
+}
+section.registerlogin{
+    border-radius: 20px;
+    height: 100%;
+    width: 57%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p.descripcionlogin{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    align-self: center;
+    padding-bottom: 25px;
+    font-size: large;
+}
+a.botonregister{
+    display: flex;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    border-radius: 15px;
+    margin: 10px 2px 10px 0px;
+    padding: 15px;
+    border:2px solid rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    text-decoration: none;
+    width: 18%;
+    align-self: center;
+    font-size: x-large;
+    background-color: rgba(57, 21, 7, 0.7);
+}
+section.login{
+    border-radius: 20px;
+    height: 100%;
+    width: 57%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h2.titulologin{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #F9D98A;
+    align-self: center;
+    padding-bottom: 15px;
+}
+label.username1{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    align-self: center;
+    padding-bottom: 15px;
+    font-size: x-large;
+}
+a.botonlogin{
+        display: flex;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    border-radius: 15px;
+    margin: 10px 2px 10px 0px;
+    padding: 14px;
+    border:2px solid rgba(255,255,255,0.2);
+    justify-content: flex-start;
+    text-decoration: none;
+    width: 18%;
+    align-self: center;
+    font-size: x-large;
+    background-color: rgba(57, 21, 7, 0.7);
+}
+input.emailypassword{
+    width: 40%;
+    align-self: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
 }
