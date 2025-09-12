@@ -13,16 +13,16 @@ Entregable: Archivo search-results.html (o similar) junto con todos los recursos
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>Resultados de búsqueda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Resultados de búsqueda</title>
 </head>
 <body>
-      <header class="contenedorPadre">
+    <header class="contenedorPadre">
         <div class="logoContenido">
             <a href="./index.html"><img class="logoPrincipal" src="./img/logoSinFondo.png" alt="SIDE A - logo"></a>
         </div>
@@ -35,22 +35,26 @@ Entregable: Archivo search-results.html (o similar) junto con todos los recursos
                 <li><a href="./register.html">REGISTER</a></li>
             </ul>
         </nav>
+        <form class="search" action="search-results.html" method="get">
+            <input type="search" placeholder="Buscar vinilos..."/>
+            <button type="submit">Buscar</button>
+        </form>
     </header>
-  <main class="cuerpoSearch">
-    <section class="resultadosBusqueda">
-        <h2 class="tituloSearch">- The Tortured Poet Departament -</h2>
-    </section>
-      <section class = "fondoBusqueda">
-          <article class="albumesCategoria">
-              <img class = "album" src="./img/ttpd.png">
-              <h4 class="tituloAlbumSearch">The Tortured Poets Departament by Taylor Swift</h4>
-              <p class="descripcionSearch">Un retrato íntimo y oscuro: The Tortured Poets Department explora amor, pérdida y vulnerabilidad con lirismo crudo, confesional y profundamente melancólico.</p>
-              <h4 class="precioSearch">$74,000.34</h4>
-              <a class = "botonvermas" href="./product.html">VER MAS</a>
-          </article>
-      </section>
-  </main>
-      <footer class="pieDePag">
+    <main class="cuerpoSearch">
+        <section class="resultadosBusqueda">
+            <h2 class="tituloSearch">- The Tortured Poet Departament -</h2>
+        </section>
+        <section class = "fondoBusqueda">
+            <article class="albumesCategoria">
+                <img class = "album" src="./img/ttpd.png">
+                <h4 class="tituloAlbumSearch">The Tortured Poets Departament by Taylor Swift</h4>
+                <p class="descripcionSearch">Un retrato íntimo y oscuro: The Tortured Poets Department explora amor, pérdida y vulnerabilidad con lirismo crudo, confesional y profundamente melancólico.</p>
+                <h4 class="precioSearch">$74,000.34</h4>
+                <a class = "botonvermas" href="./product.html">VER MAS</a>
+            </article>
+        </section>
+    </main>
+        <footer class="pieDePag">
         <div class="contenidoDelPie">
             <p>© 2025 - Side A</p>
             <ul class="integrantes">

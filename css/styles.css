@@ -13,7 +13,7 @@ header.contenedorPadre{
     justify-content: space-around;
     padding: 16px 20px;
     background-color: #130102;
-    border-bottom: 0.3px solid rgba(250,250,250, 0.3);
+    border-bottom: 0.3px solid rgba(250, 250, 250, 0.2);
 }
 
 img.logoPrincipal{
@@ -40,11 +40,42 @@ ul.navlinks{
     font-family: "Inter", "Roboto", "Arial", sans-serif;
     margin-left: 16px;
 }
+.search {
+    display: flex;
+    align-items: center;
+    max-width: 280px; 
+    width: 100%;
+    padding: 8px;       /* espacio interno general */
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    border-radius: 9999px; /* bien redondeado */
+    font-weight: bold;  /* negrita */
+}
+
+.search button {
+    margin-left: 8px;
+    border: 1px solid #4a4a4a;
+    background: #1a1919;
+    color: #ffffff;
+    padding: 8px 10px;
+    border-radius: 9999px;
+    font-weight: bold;   /* negrita */
+    cursor: pointer; /* que cambie la mano del cursor */
+}
+.search input {
+    border: none;
+    background: transparent;
+    color: #e5e7eb;          /* texto clarito */
+    padding: 10px 4px; 
+    font-weight: bold;
+    outline: none;
+    }
+
 
 /* Footer */
 footer.pieDePag{
     background-color: #130102;
-    border-top: 0.3px solid rgba(250,250,250, 0.3);
+    border-top: 0.3px solid rgba(250,250,250, 0.2);
     padding: 14px 18px;
     color: #f3f3f6;
     font-family: "Inter", "Roboto", "Arial", sans-serif;
@@ -82,6 +113,18 @@ main.cuerpo{
     background-image: url("../img/fondoPag.png");
 }
 section.masvendidos1{
+    display: flex;
+    justify-content: space-between;
+}
+section.masvendidos2{
+    display: flex;
+    justify-content: space-between;
+}
+section.extra1{
+    display: flex;
+    justify-content: space-between;
+}
+section.extra2{
     display: flex;
     justify-content: space-between;
 }
@@ -265,7 +308,7 @@ label.username1{
     font-size: x-large;
 }
 a.botonlogin{
-        display: flex;
+    display: flex;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -343,7 +386,7 @@ h2.tituloSearch{
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 section.fondoBusqueda{
-  /* es un fondo semi transparente que contendrá toda la info del albúm buscado*/
+/* es un fondo semi transparente que contendrá toda la info del albúm buscado*/
     background-color: rgba(0,0,0,0.2);
     display: flex;
     justify-content:space-between;
