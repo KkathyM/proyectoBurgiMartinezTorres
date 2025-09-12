@@ -1,0 +1,64 @@
+<!--
+Resultados de búsqueda
+Es la página donde el usuario podrá ver los resultados de
+la búsqueda que realizó en el buscador que se encuentra en Header.
+La página deberá mostrar:
+El término buscado (por el momento ese datos estará fijo).
+La lista de resultados que coincidan con el término buscado.
+Los resultados deben permitir navegación hacia sus páginas de detalle.
+Incluir una leyenda avisando al usuario para el caso de no haber datos coincidentes con el término buscado.
+Entregable: Archivo search-results.html (o similar) junto con todos los recursos necesarios, estilos de css e imágenes.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Resultados de búsqueda</title>
+</head>
+<body>
+      <header class="contenedorPadre">
+        <div class="logoContenido">
+            <a href="./index.html"><img class="logoPrincipal" src="./img/logoSinFondo.png" alt="SIDE A - logo"></a>
+        </div>
+
+        <nav class = "linksNavegacion">
+            <ul class="navlinks">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./category.html">CATÁLOGO</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./register.html">REGISTER</a></li>
+            </ul>
+        </nav>
+    </header>
+  <main class="cuerpoSearch">
+    <section class="resultadosBusqueda">
+        <h2 class="tituloSearch">- The Tortured Poet Departament -</h2>
+    </section>
+      <section class = "fondoBusqueda">
+          <article class="albumesCategoria">
+              <img class = "album" src="./img/ttpd.png">
+              <h4 class="tituloAlbumSearch">The Tortured Poets Departament by Taylor Swift</h4>
+              <p class="descripcionSearch">Un retrato íntimo y oscuro: The Tortured Poets Department explora amor, pérdida y vulnerabilidad con lirismo crudo, confesional y profundamente melancólico.</p>
+              <h4 class="precioSearch">$74,000.34</h4>
+              <a class = "botonvermas" href="./product.html">VER MAS</a>
+          </article>
+      </section>
+  </main>
+      <footer class="pieDePag">
+        <div class="contenidoDelPie">
+            <p>© 2025 - Side A</p>
+            <ul class="integrantes">
+                <li>Gaspar Burgi</li>
+                <li>Katherina Giuliana Martinez</li>
+                <li>Benjamín de la Paz Torres Diezgomez</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

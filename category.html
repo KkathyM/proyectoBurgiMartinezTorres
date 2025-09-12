@@ -1,0 +1,82 @@
+<!--
+Página: Productos por categoría
+Es la página a donde el usuario podrá ver todos los productos de una categoría.
+Al hacer click en una categoría del menú de navegación el sitio deberá mostrar una
+página con todos los productos de esa categoría.
+No es necesario hacer el html de todas las categorías.
+En esta primera etapa con un solo html será suficiente.
+Hacer click sobre un producto o el link "ver detalle" pasaremos a
+la página de detalle del producto clickeado. No es necesario hacer el detalle de cada producto.
+En esta primera etapa con un solo html será suficiente.
+Entregable: Archivo category.html, estilos compartidos en archivo CSS e imágenes.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Category POP</title>
+</head>
+<body>
+    <header class="contenedorPadre">
+        <div class="logoContenido">
+            <a href="./index.html"><img class="logoPrincipal" src="./img/logoSinFondo.png" alt="SIDE A - logo"></a>
+        </div>
+
+        <nav class = "linksNavegacion">
+            <ul class="navlinks">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./category.html">CATÁLOGO</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./register.html">REGISTER</a></li>
+            </ul>
+        </nav>
+    </header>
+  <main class="cuerpoCategoria">
+    <section>
+      <h2 class="tituloCategoria">P O P</h2>
+      <section class = "categoria">
+        <article class="albumesCategoria">
+            <img class = "album" src="./img/brat.png">
+            <h4>BRAT by Charlie XSX</h4>
+            <P>Pop de club feroz y confesional; rave dosmilera, euforia y ansiedad conviven. Carismático, vulnerable y audaz; himnos para pista bailable.</P>
+            <h4>$84,000.44</h4>
+            <a class = "botonvermas" href="./product.html">VER MAS</a>
+        </article>
+        <article class="albumesCategoria">
+            <img class="album" src="./img/GUTS.jpg">
+            <h4>GUTS by Olivia Rodrigo</h4>
+            <P>Pop atrevido y honesto; GUTS explora la ansiedad adolescente, la autoaceptación y el crecimiento personal con letras crudas y melodías pegajosas.</P>
+            <h4>$84,000.44</h4>
+            <a class = "botonvermas" href="./product.html">VER MAS</a>
+        </article>
+        <article class="albumesCategoria">
+            <img class = "album" src="./img/ttpd.png">
+            <h4>The Tortured Poets Departament by Taylor Swift</h4>
+            <p>Un retrato íntimo y oscuro: The Tortured Poets Department explora amor, pérdida y vulnerabilidad con lirismo crudo, confesional y profundamente melancólico.</p>
+            <h4>$74,000.34</h4>
+            <a class = "botonvermas" href="./product.html">VER MAS</a>
+        </article>
+        <article class="albumesCategoria">
+            <img  class = "album" src="./img/HarryStyles.webp">
+            <H4>Harry Styles by Harry Styles</H4>
+            <p>Debut vibrante y personal: Harry Styles combina rock clásico, baladas emotivas y frescura contemporánea, mostrando vulnerabilidad, fuerza y autenticidad artística.</p>
+            <h4>$53,000,50</h4>
+            <a class = "botonvermas" href="./product.html">VER MAS</a>
+        </article>
+    </section>
+  </main>
+    <footer class="pieDePag">
+        <div class="contenidoDelPie">
+            <p>© 2025 - Side A</p>
+            <ul class="integrantes">
+                <li>Gaspar Burgi</li>
+                <li>Katherina Giuliana Martinez</li>
+                <li>Benjamín de la Paz Torres Diezgomez</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
