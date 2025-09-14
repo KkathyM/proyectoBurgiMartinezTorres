@@ -110,40 +110,191 @@ footer.contenidoDelPie{
 /* CUERPO */
 
 main.cuerpo{
-    background-image: url("../img/fondoPag.png");
+    background-image: url("../img/fondoPaginas.png");
 }
+
+section.tienda{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 1470px; 
+    margin: 24px 0 24px 24px;
+    padding: 0; 
+}
+
+section.izquierda{
+    width: 220px; 
+    background-color: #1b1412;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 12px 14px;
+    margin-right: 28px;     /* separación de la derecha */
+}
+
+/* Título "Categorías" */
+.tituloCategorias{
+    color: #E2AC37;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.6px;  /* espaciado */
+    margin-bottom: 12px;
+}
+
+/* Lista categorías */
+ul.listaCategorias{
+    list-style: none;
+    padding-left: 0;
+}
+
+.listaCategorias li{
+    margin-bottom: 9px;      /* separa los botones */
+}
+
+.listaCategorias a{
+    display: block;
+    text-decoration: none;
+    color: #f3f3f6;
+    font-family: "Inter","Roboto","Arial",sans-serif;
+    font-weight: 500;
+    padding: 10px 12px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px;
+    background: #211916;
+}
+
+section.derecha{
+    width: 1280px;   
+}
+
+section.derecha h2{
+    font-family: "Bebas Neue", sans-serif;
+    color: #ffffff;
+    font-size: 33px;
+    letter-spacing: 0.7px;
+    margin: 6px 0 14px;
+}
+
 section.masvendidos1{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 6px;  
 }
 section.masvendidos2{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 6px;  
 }
 section.extra1{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 6px;  
 }
 section.extra2{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 6px;  
 }
-img.album{
-    height: 300px;
-    width: 300px;
+
+/* Recuadros para 5 álbumes por fila */
+section.masvendidos1 article{
+    width: 19.9%;                   
+    background: #261816;
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 16px;
+    padding: 12px;
+    color: #eaeaea;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
+    /* para alinear el botón VER MAS al fondo de cada tarjeta: */
+    display: flex;
+    flex-direction: column;
 }
-a.botonvermas{
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
+section.masvendidos2 article{
+    width: 19.9%;                   
+    background: #261816;
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 16px;
+    padding: 12px;
+    color: #eaeaea;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
+    display: flex;
+    flex-direction: column;
+}
+section.extra1 article{
+    width: 19.9%;                   
+    background: #261816;
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 16px;
+    padding: 12px;
+    color: #eaeaea;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
+    display: flex;
+    flex-direction: column;
+}
+section.extra2 article{
+    width: 19.9%;                   
+    background: #261816;
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 16px;
+    padding: 12px;
+    color: #eaeaea;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagen dentro del recuadro */
+section.derecha img.album{
+    display: block;
+    width: 100%;        /* para ocupar el ancho del recuadro */
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Tipos de texto dentro del recuadro */
+section.derecha article h4{
+    margin: 10px 0 6px;
     font-weight: 800;
-    font-style: normal;
+    color: #f5f5f5;
+    font-family: "Inter", sans-serif;
+}
+section.derecha article p{
+    color: #cfcfcf;
+    font-size: 14px;
+    margin: 0 0 8px;
+    font-family: "Inter", sans-serif;
+}
+h4.precio{
     color: #E2AC37;
-    background-color:rgba(0,0,0,0.3);
-    border-radius: 15px;
-    margin: 10px 2px 10px 0px;
-    padding: 2px;
-    border:1px solid rgba(255,255,255,0.2);
+    font-weight: 800;
+    margin: 6px 0 10px;
+    font-family: "Inter", sans-serif;
+}
+
+a.botonvermas{
+    display: block;
+    text-align: center;
+    background: #f97316;
+    color: #eaeaea;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 595;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.2);
     text-decoration: none;
+
+    margin-top: auto;      /* para que todos queden alineados */
+    height: 44px;    
+    line-height: 24px;  
 }
 
 /* PAGINA PRODUCT */
