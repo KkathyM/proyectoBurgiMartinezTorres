@@ -10,8 +10,8 @@
     <title>Login</title>
 </head>
 <body>
-    <main class="cuerpo">
-        <header class="contenedorPadre">
+    
+    <header class="contenedorPadre">
             <div class="logoContenido">
                 <a href="./index.html"><img class="logoPrincipal" src="./img/logoSinFondo.png" alt="SIDE A - logo"></a>
             </div>
@@ -28,7 +28,8 @@
                 <input type="search" placeholder="Buscar vinilos..."/>
                 <button type="submit">Buscar</button>
             </form>
-        </header>
+    </header>
+    <main class="cuerpo">
         <div class ="paglogin">
             <section class = "registerlogin">
                 <h2 class = "titulologin">¡HOLA, BIENVENIDO!</h2>
@@ -36,13 +37,16 @@
                 <a class = "botonregister" href="./register.html">Register</a>
             </section>
             <section class = "login">
+                <form class = "contenedor" action="./index.html" method="get">
                 <h2 class = "titulologin">LOGIN</h2>
                 <label class = "username1">Username</label>
-                <input class = "emailypassword" type="email">
+                <input required class = "emailypassword" placeholder="Email" type="email">
                 <label class ="username1" >Password</label>
-                <input class = "emailypassword" type= "password">
-                <a class = "botonlogin" href="./index.html">Ingresar</a>
+                <input required class = "emailypassword" placeholder="Contraseña" type= "password">
+                <button class = "botonlogin2" type="summit"> Login</button>
+                </form>
             </section>
+    </main>
         </div>
         <footer class="pieDePag">
             <div class="contenidoDelPie">
@@ -54,6 +58,6 @@
                 </ul>
             </div>
         </footer>
-    </main>
+    
 </body>
 </html>

@@ -471,7 +471,7 @@ a.botonlogin{
     border:2px solid rgba(255,255,255,0.2);
     justify-content: flex-start;
     text-decoration: none;
-    width: 18%;
+    width: 15%;
     align-self: center;
     font-size: x-large;
     background-color: rgba(57, 21, 7, 0.7);
@@ -590,10 +590,11 @@ main.cuerpo{
     
 }
 div.paglogin{
-    background-image: url("../img/1.png");
+    background-image: url("../img/DISEÑO.png");
     background-size: 100%;
     border-radius: 25px;
-    box-shadow: 5px 3px 3px rgba(0, 0, 0,0.3);
+    box-shadow: 5px 3px 3px rgba(0, 0, 0,0.3); 
+    border: 0px;
     display: flex;
     height: 500px;
     width: 80%;
@@ -638,7 +639,25 @@ a.botonregister{
     border:2px solid rgba(255,255,255,0.1);
     justify-content: flex-start;
     text-decoration: none;
-    width: 10%;
+    width: 20%;
+    align-self: center;
+    font-size: x-large;
+    background-color: rgba(57, 21, 7, 0.7);
+}
+a.botonregister2{
+    display: flex;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    border-radius: 15px;
+    margin: 10px 2px 10px 0px;
+    padding: 15px;
+    border:2px solid rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    text-decoration: none;
+    width: 15%;
     align-self: center;
     font-size: x-large;
     background-color: rgba(57, 21, 7, 0.7);
@@ -685,6 +704,24 @@ label.username1{
     justify-content: flex-start;
     text-decoration: none;
     width: 25%;
+    align-self: center;
+    font-size: x-large;
+    background-color: rgba(57, 21, 7, 0.7);
+}
+.botonlogin2{
+        display: flex;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    border-radius: 15px;
+    margin: 10px 2px 10px 0px;
+    padding: 14px;
+    border:2px solid rgba(255,255,255,0.2);
+    justify-content: flex-start;
+    text-decoration: none;
+    width: 15%;
     align-self: center;
     font-size: x-large;
     background-color: rgba(57, 21, 7, 0.7);
