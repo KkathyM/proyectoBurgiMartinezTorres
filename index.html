@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -26,7 +27,7 @@
       </ul>
     </nav>
     <form class="search" action="search-results.html" method="get">
-      <input type="search" placeholder="Buscar vinilos..." />
+      <input type="search" name="search_query" value= "" placeholder="Buscar vinilos..." />
       <button type="submit">Buscar</button>
     </form>
   </header>
@@ -95,7 +96,7 @@
               <a class="botonvermas" href="./product.html">VER MÁS</a>
             </article>
           </section>
-          <section class="masvendidos2">
+          <section class="masvendidos1">
             <article>
               <img class="album" src="./img/bornToDie.webp">
               <h4>Born to Die — Lana Del Rey</h4>
@@ -135,7 +136,7 @@
         </section>
 
         <section class="extra">
-          <h2>Más vinilos</h2>
+          <h2 class="masVinilos" id="masVinilos">Más vinilos</h2>
           <section class="extra1">
             <article>
               <img class="album" src="./img/V.jpg">

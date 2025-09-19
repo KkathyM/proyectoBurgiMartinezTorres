@@ -55,6 +55,7 @@ ul.navlinks {
   /* bien redondeado */
   font-weight: bold;
   /* negrita */
+  justify-content: space-between;
 }
 
 .search button {
@@ -184,6 +185,11 @@ section.derecha h2 {
   margin: 6px 0 14px;
 }
 
+#masVinilos{  /*agrego id porque sino derecha tiene más peso y no se aplica el margin-top*/
+  margin-top: 20px;
+}
+
+
 section.masvendidos1 {
   display: flex;
   justify-content: space-between;
@@ -191,21 +197,7 @@ section.masvendidos1 {
   margin-bottom: 6px;
 }
 
-section.masvendidos2 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 6px;
-}
-
 section.extra1 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 6px;
-}
-
-section.extra2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -221,37 +213,14 @@ section.masvendidos1 article {
   padding: 12px;
   color: #eaeaea;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  margin-bottom: 0.2%;
 
   /* para alinear el botón VER MAS al fondo de cada tarjeta: */
   display: flex;
   flex-direction: column;
 }
 
-section.masvendidos2 article {
-  width: 19.9%;
-  background: #261816;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  border-radius: 16px;
-  padding: 12px;
-  color: #eaeaea;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-}
-
 section.extra1 article {
-  width: 19.9%;
-  background: #261816;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  border-radius: 16px;
-  padding: 12px;
-  color: #eaeaea;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-}
-
-section.extra2 article {
   width: 19.9%;
   background: #261816;
   border: 1px solid rgba(255, 255, 255, 0.10);
@@ -834,6 +803,7 @@ input.emailypassword {
   }
 
   /* HOME y CATALOGO */
+
   section.tienda {
     flex-direction: column;
     align-items: center;
