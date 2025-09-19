@@ -43,7 +43,7 @@ ul.navlinks{
 .search {
     display: flex;
     align-items: center;
-    max-width: 280px; 
+    max-width: 280px;
     width: 100%;
     padding: 8px;       /* espacio interno general */
     background: #1a1a1a;
@@ -66,7 +66,7 @@ ul.navlinks{
     border: none;
     background: transparent;
     color: #e5e7eb;          /* texto clarito */
-    padding: 10px 4px; 
+    padding: 10px 4px;
     font-weight: bold;
     outline: none;
     }
@@ -117,13 +117,12 @@ section.tienda{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 1470px; 
     margin: 24px 0 24px 24px;
-    padding: 0; 
+    padding: 0;
 }
 
 section.izquierda{
-    width: 220px; 
+    width: 20%;
     background-color: #1b1412;
     border: 1px solid rgba(255,255,255,0.12);
     border-radius: 16px;
@@ -163,7 +162,8 @@ ul.listaCategorias{
 }
 
 section.derecha{
-    width: 1280px;   
+    width: 80%;
+    padding-right: 1%;
 }
 
 section.derecha h2{
@@ -178,30 +178,30 @@ section.masvendidos1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 6px;  
+    margin-bottom: 6px;
 }
 section.masvendidos2{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 6px;  
+    margin-bottom: 6px;
 }
 section.extra1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 6px;  
+    margin-bottom: 6px;
 }
 section.extra2{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 6px;  
+    margin-bottom: 6px;
 }
 
 /* Recuadros para 5 álbumes por fila */
 section.masvendidos1 article{
-    width: 19.9%;                   
+    width: 19.9%;
     background: #261816;
     border: 1px solid rgba(255,255,255,0.10);
     border-radius: 16px;
@@ -214,7 +214,7 @@ section.masvendidos1 article{
     flex-direction: column;
 }
 section.masvendidos2 article{
-    width: 19.9%;                   
+    width: 19.9%;
     background: #261816;
     border: 1px solid rgba(255,255,255,0.10);
     border-radius: 16px;
@@ -226,7 +226,7 @@ section.masvendidos2 article{
     flex-direction: column;
 }
 section.extra1 article{
-    width: 19.9%;                   
+    width: 19.9%;
     background: #261816;
     border: 1px solid rgba(255,255,255,0.10);
     border-radius: 16px;
@@ -238,7 +238,7 @@ section.extra1 article{
     flex-direction: column;
 }
 section.extra2 article{
-    width: 19.9%;                   
+    width: 19.9%;
     background: #261816;
     border: 1px solid rgba(255,255,255,0.10);
     border-radius: 16px;
@@ -293,8 +293,8 @@ a.botonvermas{
     text-decoration: none;
 
     margin-top: auto;      /* para que todos queden alineados */
-    height: 44px;    
-    line-height: 24px;  
+    height: 44px;
+    line-height: 24px;
 }
 
 /* PAGINA PRODUCT */
@@ -486,7 +486,7 @@ input.emailypassword{
 }
 
 /* CATEGORIA */
-main.cuerpoCategoria{
+body.cuerpoCategoria{
     background-image: url("../img/DISEÑO.png");
     background-size: 100% 100%;
 }
@@ -508,6 +508,7 @@ article.albumesCategoria{
 h2.tituloCategoria{
     font-family: "Bebas Neue", sans-serif;
     background-color: rgba(0,0,0,0.3);
+    border-radius: 25px;
     font-weight: 400;
     font-style: normal;
     font-size: xx-large;
@@ -519,7 +520,7 @@ h2.tituloCategoria{
 }
 
 /* Search */
-main.cuerpoSearch{
+body.cuerpoSearch{
     background-image: url("../img/backgorundCircular.png");
     background-size: 100% 100%;
 }
@@ -587,13 +588,13 @@ main.cuerpo{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+
 }
 div.paglogin{
     background-image: url("../img/DISEÑO.png");
     background-size: 100%;
     border-radius: 25px;
-    box-shadow: 5px 3px 3px rgba(0, 0, 0,0.3); 
+    box-shadow: 5px 3px 3px rgba(0, 0, 0,0.3);
     border: 0px;
     display: flex;
     height: 500px;
@@ -647,7 +648,6 @@ a.botonregister{
 a.botonregister2{
     display: flex;
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: whitesmoke;
@@ -771,5 +771,87 @@ input.emailypassword{
     }
     h4{
         font-size: larger;
+    }
+    /* HOME y CATALOGO */
+    section.tienda{
+        flex-direction: column;
+        align-items: center;
+        margin: 12px;
+        padding: 12px;
+    }
+    section.izquierda{
+        width: 100%;
+        margin: 0 0 24px 0;
+        padding: 12px;
+    }
+    ul.listaCategorias{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    section.derecha{
+        width: 100%;
+        padding: 0;
+
+      }
+    section.masvendidos{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    section.masvendidos1{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    section.masvendidos1 article{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    section.masvendios2{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+    }
+    section.masvendidos2 article{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    section.extra1{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    section.extra1 article{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    /*LOGIN*/
+    div.paglogin{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin: 24px;
+        padding: 12px;
+      }
+    section.registerlogin{
+        width: 100%;
+        height: auto;
+        margin-bottom: 24px;
+    }
+    section.login{
+        width: 100%;
+        height: auto;
+    }
+    a.botonregister{
+        width: 45%;
+    }
+    button.botonlogin2{
+        width: 35%;
     }
 }

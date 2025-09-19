@@ -12,57 +12,111 @@ Entregable: Archivo search-results.html (o similar) junto con todos los recursos
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Resultados de búsqueda</title>
-</head>
-<body>
-    <header class="contenedorPadre">
-        <div class="logoContenido">
-            <a href="./index.html"><img class="logoPrincipal" src="./img/logoSinFondo.png" alt="SIDE A - logo"></a>
-        </div>
 
-        <nav class = "linksNavegacion">
-            <ul class="navlinks">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./category.html">CATÁLOGO</a></li>
-                <li><a href="./login.html">LOGIN</a></li>
-                <li><a href="./register.html">REGISTER</a></li>
-            </ul>
-        </nav>
-        <form class="search" action="search-results.html" method="get">
-            <input type="search" placeholder="Buscar vinilos..."/>
-            <button type="submit">Buscar</button>
-        </form>
-    </header>
-    <main class="cuerpoSearch">
-        <section class="resultadosBusqueda">
-            <h2 class="tituloSearch">- The Tortured Poet Departament -</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Resultados de búsqueda</title>
+</head>
+
+<body class="cuerpoSearch">
+  <header class="contenedorPadre">
+    <div class="logoContenido">
+      <a href="./index.html"><img class="logoPrincipal" src="./img/logoSinFondo.png" alt="SIDE A - logo"></a>
+    </div>
+
+    <nav class="linksNavegacion">
+      <ul class="navlinks">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./category.html">CATÁLOGO</a></li>
+        <li><a href="./login.html">LOGIN</a></li>
+        <li><a href="./register.html">REGISTER</a></li>
+      </ul>
+    </nav>
+    <form class="search" action="search-results.html" method="get">
+      <input type="search" placeholder="Buscar vinilos..." />
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main>
+    <section class="tienda">
+      <section class="izquierda">
+        <h3 class="tituloCategorias">Categorías</h3>
+        <ul class="listaCategorias">
+          <li><a href="./category.html">Rock</a></li>
+          <li><a href="./category.html">Pop</a></li>
+          <li><a href="./category.html">Indie</a></li>
+          <li><a href="./category.html">K-pop</a></li>
+          <li><a href="./category.html">Electrónica</a></li>
+          <li><a href="./category.html">Hip-Hop</a></li>
+          <li><a href="./category.html">Metal</a></li>
+          <li><a href="./category.html">Clásica</a></li>
+          <li><a href="./category.html">R&B</a></li>
+          <li><a href="./category.html">Soundtrack</a></li>
+          <li><a href="./category.html">Latino</a></li>
+          <li><a href="./category.html">Country</a></li>
+          <li><a href="./category.html">Jazz</a></li>
+          <li><a href="./category.html">Punk</a></li>
+          <li><a href="./category.html">Reggae</a></li>
+        </ul>
+      </section>
+      <section class="derecha">
+        <h2 class="tituloCategoria">Resultados de búsqueda:</h2>
+        <section class="masvendidos1">
+          <article>
+            <img class="album" src="./img/brat.png">
+            <h4>BRAT — Charlie XSX</h4>
+            <p>Hyperpop de club feroz; euforia dosmilera, beats intensos y confesiones afiladas que prenden la pista.
+            </p>
+            <h4 class="precio">$84,000.44</h4>
+            <a class="botonvermas" href="./product.html">VER MÁS</a>
+          </article>
+          <article>
+            <img class="album" src="./img/HarryStyles.webp">
+            <H4>Harry Styles — Harry Styles</H4>
+            <p>Rock clásico y pop moderno; baladas emotivas, guitarras cálidas y un carisma artístico desbordante.</p>
+            <h4 class="precio">$53,000,50</h4>
+            <a class="botonvermas" href="./product.html">VER MÁS</a>
+          </article>
+          <article>
+            <img class="album" src="./img/ttpd.png">
+            <h4>The Tortured Poets Departament — Taylor Swift</h4>
+            <p>Pop íntimo y oscuro; amor, pérdida y vulnerabilidad confesional en letras crudas y arreglos sobrios.</p>
+            <h4 class="precio">$74,000.34</h4>
+            <a class="botonvermas" href="./product.html">VER MÁS</a>
+          </article>
+          <article>
+            <img class="album" src="./img/mansBestFriend.jpg">
+            <h4>Man Best Friend — Sabrina Carpenter</h4>
+            <p>Pop ingenioso y sensual; sátira romántica, hooks pegadizos y una producción brillante y audaz.</p>
+            <h4 class="precio">$100,000.00</h4>
+            <a class="botonvermas" href="./product.html">VER MÁS</a>
+          </article>
+          <article>
+            <img class="album" src="./img/DangWoman.jpg">
+            <h4>Dangerous Woman — Ariana Grande</h4>
+            <p>Pop/R&B sofisticado; rango vocal descomunal, soul moderno y himnos de empoderamiento seductor.</p>
+            <h4 class="precio">$57,000.00</h4>
+            <a class="botonvermas" href="./product.html">VER MÁS</a>
+          </article>
         </section>
-        <section class = "fondoBusqueda">
-            <article class="albumesCategoria">
-                <img class = "album" src="./img/ttpd.png">
-                <h4 class="tituloAlbumSearch">The Tortured Poets Departament by Taylor Swift</h4>
-                <p class="descripcionSearch">Un retrato íntimo y oscuro: The Tortured Poets Department explora amor, pérdida y vulnerabilidad con lirismo crudo, confesional y profundamente melancólico.</p>
-                <h4 class="precioSearch">$74,000.34</h4>
-                <a class = "botonvermas" href="./product.html">VER MAS</a>
-            </article>
-        </section>
-    </main>
-        <footer class="pieDePag">
-        <div class="contenidoDelPie">
-            <p>© 2025 - Side A</p>
-            <ul class="integrantes">
-                <li>Gaspar Burgi</li>
-                <li>Katherina Giuliana Martinez</li>
-                <li>Benjamín de la Paz Torres Diezgomez</li>
-            </ul>
-        </div>
-    </footer>
+  </main>
+
+  <footer class="pieDePag">
+    <div class="contenidoDelPie">
+      <p>© 2025 - Side A</p>
+      <ul class="integrantes">
+        <li>Gaspar Burgi</li>
+        <li>Katherina Giuliana Martinez</li>
+        <li>Benjamín de la Paz Torres Diezgomez</li>
+      </ul>
+    </div>
+  </footer>
 </body>
+
 </html>
