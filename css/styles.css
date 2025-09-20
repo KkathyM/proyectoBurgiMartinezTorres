@@ -47,11 +47,14 @@ ul.navlinks {
   align-items: center;
   max-width: 280px;
   width: 100%;
-  padding: 8px; /* espacio interno general */
+  padding: 8px;
+  /* espacio interno general */
   background: #1a1a1a;
   border: 1px solid #3a3a3a;
-  border-radius: 9999px; /* bien redondeado */
-  font-weight: bold; /* negrita */
+  border-radius: 9999px;
+  /* bien redondeado */
+  font-weight: bold;
+  /* negrita */
   justify-content: space-between;
 }
 
@@ -62,9 +65,12 @@ ul.navlinks {
   color: #ffffff;
   padding: 8px 10px;
   border-radius: 9999px;
-  font-weight: bold; /* negrita */
-  cursor: pointer; /* que cambie la mano del cursor */
-  transition: background-color .2s ease; /* transición suave */
+  font-weight: bold;
+  /* negrita */
+  cursor: pointer;
+  /* que cambie la mano del cursor */
+  transition: background-color .2s ease;
+  /* transición suave */
 }
 
 .search button:hover {
@@ -136,7 +142,8 @@ section.izquierda {
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 16px;
   padding: 12px 14px;
-  margin-right: 28px; /* separación de la derecha */
+  margin-right: 28px;
+  /* separación de la derecha */
 }
 
 /* Título "Categorías" */
@@ -144,7 +151,8 @@ section.izquierda {
   color: #E2AC37;
   font-family: "Bebas Neue", sans-serif;
   font-size: 25px;
-  letter-spacing: 0.6px; /* espaciado */
+  letter-spacing: 0.6px;
+  /* espaciado */
   margin-bottom: 12px;
 }
 
@@ -155,7 +163,8 @@ ul.listaCategorias {
 }
 
 .listaCategorias li {
-  margin-bottom: 9px; /* separa los botones */
+  margin-bottom: 9px;
+  /* separa los botones */
 }
 
 .listaCategorias a {
@@ -168,11 +177,11 @@ ul.listaCategorias {
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   background: #211916;
-  transition: background-color .2s ease;  
+  transition: background-color .2s ease;
 }
 
-.listaCategorias a:hover { 
-  background-color: #3a2d28; 
+.listaCategorias a:hover {
+  background-color: #3a2d28;
 }
 
 section.derecha {
@@ -188,7 +197,8 @@ section.derecha h2 {
   margin: 6px 0 12px;
 }
 
-#masVinilos{  /*agrego id porque sino derecha tiene más peso y no se aplica el margin-top*/
+#masVinilos {
+  /*agrego id porque sino derecha tiene más peso y no se aplica el margin-top*/
   margin-top: 20px;
 }
 
@@ -237,7 +247,8 @@ section.extra1 article {
 /* Imagen dentro del recuadro */
 section.derecha img.album {
   display: block;
-  width: 100%; /* para ocupar el ancho del recuadro */
+  width: 100%;
+  /* para ocupar el ancho del recuadro */
   height: auto;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -277,39 +288,41 @@ a.botonVerMas {
   border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  margin-top: auto; /* para que todos queden alineados */
+  margin-top: auto;
+  /* para que todos queden alineados */
   height: 44px;
   line-height: 24px;
 }
-  a.botonVerMas { 
-    transition: background-color .2s ease; 
-  }
 
-  a.botonVerMas:hover { 
-    background-color: #e3560a; 
-  }
+a.botonVerMas {
+  transition: background-color .2s ease;
+}
 
-.masVendidos1 article .textoArriba{
+a.botonVerMas:hover {
+  background-color: #e3560a;
+}
+
+.masVendidos1 article .textoArriba {
   margin-top: 3px;
 }
 
-.extra1 article .textoArriba{
+.extra1 article .textoArriba {
   margin-top: 3px;
 }
 
-.masVendidos1 article .textoAbajo{
+.masVendidos1 article .textoAbajo {
   margin-top: auto;
 }
 
-.extra1 article .textoAbajo{
+.extra1 article .textoAbajo {
   margin-top: auto;
 }
 
-.masVendidos1 article .textoAbajo .botonVerMas{
+.masVendidos1 article .textoAbajo .botonVerMas {
   margin-top: 11px;
 }
 
-.extra1 article .textoAbajo .botonVerMas{
+.extra1 article .textoAbajo .botonVerMas {
   margin-top: 11px;
 }
 
@@ -827,53 +840,54 @@ input.emailypassword {
 
   /* HOME y CATÁLOGO */
 
-  header.contenedorPadre{
+  header.contenedorPadre {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 12px;
   }
 
-  .logoContenido{ 
-    display: flex; 
-    align-items: center; 
+  .logoContenido {
+    display: flex;
+    align-items: center;
   }
 
-  img.logoPrincipal{ 
-    height: 42px; 
-    width: auto; 
+  img.logoPrincipal {
+    height: 42px;
+    width: auto;
     margin-left: 50px;
     margin-top: 10px;
   }
 
-  .search{               
-    margin-left: auto;             
+  .search {
+    margin-left: auto;
     align-items: center;
-    width: auto;           
-    padding: 4px;  
-    margin-right: 20px; 
-    margin-top: 10px;                           
+    width: auto;
+    padding: 4px;
+    margin-right: 20px;
+    margin-top: 10px;
   }
 
-  .search input{
-    width: 160px;         
-    padding: 8px 10px;   
+  .search input {
+    width: 160px;
+    padding: 8px 10px;
     font-size: 12.5px;
     border-radius: 9999px;
   }
 
-  .linksNavegacion{  
-    order: 2; /*para que quede abajo del logo y search*/          
+  .linksNavegacion {
+    order: 2;
+    /*para que quede abajo del logo y search*/
     width: 100%;
     margin-top: 18px;
   }
 
-  .linksNavegacion .navlinks{
+  .linksNavegacion .navlinks {
     justify-content: center;
   }
-  
-  .linksNavegacion .navlinks li{
-    margin: 0 7px 6px;       
+
+  .linksNavegacion .navlinks li {
+    margin: 0 7px 6px;
   }
 
   section.tienda {
@@ -974,7 +988,7 @@ input.emailypassword {
     margin-bottom: 24px;
   }
 
-  section.derecha h2{
+  section.derecha h2 {
     font-size: 35px;
   }
 
