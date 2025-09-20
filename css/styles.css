@@ -522,6 +522,7 @@ article.albumesCategoria {
 h2.tituloCategoria {
   font-family: "Bebas Neue", sans-serif;
   background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 25px;
   font-weight: 400;
   font-style: normal;
@@ -532,6 +533,7 @@ h2.tituloCategoria {
   padding-bottom: 15px;
   padding-top: 15px;
 }
+
 
 /* SEARCH */
 
@@ -544,6 +546,7 @@ h2.tituloSearch {
   font-family: "Bebas Neue", sans-serif;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   font-weight: 400;
   font-style: normal;
   font-size: 42px;
@@ -589,7 +592,28 @@ h4.precioSearch {
   font-size: large;
   text-align: center;
 }
+section.noResults {
+  display: none; /* Oculto por defecto */
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  padding-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  align-items: center;
+  margin-top: 45px;
+  text-align: center;
+  color: white;
+}
+img.noResultsImg {
 
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+
+}
 /* REGISTER */
 
 .bodyregister {
