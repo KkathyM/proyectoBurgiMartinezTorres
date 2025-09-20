@@ -34,22 +34,23 @@
     <main class="cuerpo">
         <div class="paglogin">
             <section class="registerlogin">
-                <h2 class="titulologin">¡HOLA, BIENVENIDO!</h2>
-                <p class="descripcionlogin"> ¿Ya tenés una cuenta?</p>
-                <a class="botonregister2" href="./login.html">Iniciar Sesión</a>
+                <form class="contenedor" action="./login.html" method="get">
+                    <h2 class="titulologin">¡HOLA, BIENVENIDO!</h2>
+                    <p class="descripcionlogin"> ¿Ya tenés una cuenta?</p>
+                    <button class="botonlogin" type="summit">Iniciar sesion</button>
+                </form>
             </section>
             <section class="login">
                 <h2 class="titulologin">REGISTRATE</h2>
                 <form class="contenedor" action="./index.html" method="get">
                     <label class="username1">Email</label>
-                    <input required class="emailypassword" id="usuario" type="email" name="user"
-                        placeholder="Email"><span></span>
+                    <input required class="emailypassword" id="usuario" type="email" name="user" value ="" placeholder="Email"><span></span>
                     <label class="username1">Contraseña</label>
-                    <input required class="emailypassword" type="password" placeholder="Contraseña">
+                    <input required class="emailypassword" type="password" name = "contraseñauser" value ="" placeholder="Contraseña">
                     <label class="username1">Repetir contraseña</label>
-                    <input required class="emailypassword" type="password" placeholder="Repetir contraseña">
+                    <input required class="emailypassword" name ="constraseñauser2" value ="" type="password" placeholder="Repetir contraseña">
                     <div class="divcheckbox">
-                        <input type="checkbox" id="programacion" name="hobbies" value="Programacion">
+                        <input type="checkbox" id="programacion" name="condiciones" value="">
                         <label for="Condiciones">Acepto los términos y condiciones.</label>
                     </div>
                     <button class="botonlogin" type="summit">Registrarse</button>

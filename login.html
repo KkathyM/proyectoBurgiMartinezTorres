@@ -34,22 +34,25 @@
     <main class="cuerpo">
         <div class="paglogin">
             <section class="registerlogin">
-                <h2 class="titulologin">¡HOLA, BIENVENIDO!</h2>
-                <p class="descripcionlogin"> ¿No tenés una cuenta?</p>
-                <a class="botonregister" href="./register.html">Registrarse</a>
+                <form class="contenedor" action="./register.html" method="get">
+                    <h2 class="titulologin">¡HOLA, BIENVENIDO!</h2>
+                    <p class="descripcionlogin"> ¿No tenés una cuenta?</p>
+                    <button class="botonlogin" type="summit">Registrarse</button>
+                </form>
             </section>
             <section class="login">
                 <form class="contenedor" action="./index.html" method="get">
                     <h2 class="titulologin">INICIAR SESIÓN</h2>
                     <label class="username1">Usuario</label>
-                    <input required class="emailypassword" placeholder="Email" type="email">
+                    <input required class="emailypassword" placeholder="Email" name="info_email" value="" type="email">
                     <label class="username1">Contraseña</label>
-                    <input required class="emailypassword" placeholder="Contraseña" type="password">
-                    <button class="botonlogin2" type="summit">Iniciar Sesión</button>
+                    <input required class="emailypassword" name ="info_constraseña" value = "" placeholder="Contraseña" type="password">
+                    <button class="botonlogin" type="summit">Iniciar Sesión</button>
                 </form>
             </section>
+        </div>
     </main>
-    </div>
+    
     <footer class="pieDePag">
         <div class="contenidoDelPie">
             <p>© 2025 - Side A</p>
