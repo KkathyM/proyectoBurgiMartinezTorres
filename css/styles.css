@@ -36,7 +36,7 @@ ul.navlinks {
   color: #f3f3f6;
   font-weight: 500;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
   font-family: "Inter", "Roboto", "Arial", sans-serif;
   margin-left: 16px;
@@ -47,14 +47,11 @@ ul.navlinks {
   align-items: center;
   max-width: 280px;
   width: 100%;
-  padding: 8px;
-  /* espacio interno general */
+  padding: 8px; /* espacio interno general */
   background: #1a1a1a;
   border: 1px solid #3a3a3a;
-  border-radius: 9999px;
-  /* bien redondeado */
-  font-weight: bold;
-  /* negrita */
+  border-radius: 9999px; /* bien redondeado */
+  font-weight: bold; /* negrita */
   justify-content: space-between;
 }
 
@@ -65,10 +62,13 @@ ul.navlinks {
   color: #ffffff;
   padding: 8px 10px;
   border-radius: 9999px;
-  font-weight: bold;
-  /* negrita */
-  cursor: pointer;
-  /* que cambie la mano del cursor */
+  font-weight: bold; /* negrita */
+  cursor: pointer; /* que cambie la mano del cursor */
+  transition: background-color .2s ease; /* transición suave */
+}
+
+.search button:hover {
+  background-color: #333333;
 }
 
 .search input {
@@ -82,7 +82,8 @@ ul.navlinks {
 }
 
 
-/* Footer */
+/* FOOTER */
+
 footer.pieDePag {
   background-color: #130102;
   border-top: 0.3px solid rgba(250, 250, 250, 0.2);
@@ -118,7 +119,7 @@ footer.contenidoDelPie {
 /* CUERPO */
 
 main.cuerpo {
-  background-image: url("../img/fondoPaginas.png");
+  background-image: url("../img/DISEÑO.png");
 }
 
 section.tienda {
@@ -132,20 +133,18 @@ section.tienda {
 section.izquierda {
   width: 20%;
   background-color: #1b1412;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 16px;
   padding: 12px 14px;
-  margin-right: 28px;
-  /* separación de la derecha */
+  margin-right: 28px; /* separación de la derecha */
 }
 
 /* Título "Categorías" */
 .tituloCategorias {
   color: #E2AC37;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 22px;
-  letter-spacing: 0.6px;
-  /* espaciado */
+  font-size: 25px;
+  letter-spacing: 0.6px; /* espaciado */
   margin-bottom: 12px;
 }
 
@@ -156,8 +155,7 @@ ul.listaCategorias {
 }
 
 .listaCategorias li {
-  margin-bottom: 9px;
-  /* separa los botones */
+  margin-bottom: 9px; /* separa los botones */
 }
 
 .listaCategorias a {
@@ -167,9 +165,14 @@ ul.listaCategorias {
   font-family: "Inter", "Roboto", "Arial", sans-serif;
   font-weight: 500;
   padding: 10px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   background: #211916;
+  transition: background-color .2s ease;  
+}
+
+.listaCategorias a:hover { 
+  background-color: #3a2d28; 
 }
 
 section.derecha {
@@ -180,9 +183,9 @@ section.derecha {
 section.derecha h2 {
   font-family: "Bebas Neue", sans-serif;
   color: #ffffff;
-  font-size: 33px;
-  letter-spacing: 0.7px;
-  margin: 6px 0 14px;
+  font-size: 42px;
+  letter-spacing: 0.8px;
+  margin: 6px 0 12px;
 }
 
 #masVinilos{  /*agrego id porque sino derecha tiene más peso y no se aplica el margin-top*/
@@ -190,30 +193,28 @@ section.derecha h2 {
 }
 
 
-section.masvendidos1 {
+section.masVendidos1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 6px;
 }
 
 section.extra1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 6px;
 }
 
 /* Recuadros para 5 álbumes por fila */
-section.masvendidos1 article {
+section.masVendidos1 article {
   width: 19.9%;
   background: #261816;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 12px;
   color: #eaeaea;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  margin-bottom: 0.2%;
+  margin-bottom: 0.65%;
 
   /* para alinear el botón VER MAS al fondo de cada tarjeta: */
   display: flex;
@@ -223,11 +224,12 @@ section.masvendidos1 article {
 section.extra1 article {
   width: 19.9%;
   background: #261816;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 12px;
   color: #eaeaea;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  margin-bottom: 0.65%;
   display: flex;
   flex-direction: column;
 }
@@ -235,8 +237,7 @@ section.extra1 article {
 /* Imagen dentro del recuadro */
 section.derecha img.album {
   display: block;
-  width: 100%;
-  /* para ocupar el ancho del recuadro */
+  width: 100%; /* para ocupar el ancho del recuadro */
   height: auto;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -264,7 +265,7 @@ h4.precio {
   font-family: "Inter", sans-serif;
 }
 
-a.botonvermas {
+a.botonVerMas {
   display: block;
   text-align: center;
   background: #f97316;
@@ -276,13 +277,44 @@ a.botonvermas {
   border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  margin-top: auto;
-  /* para que todos queden alineados */
+  margin-top: auto; /* para que todos queden alineados */
   height: 44px;
   line-height: 24px;
 }
+  a.botonVerMas { 
+    transition: background-color .2s ease; 
+  }
+
+  a.botonVerMas:hover { 
+    background-color: #e3560a; 
+  }
+
+.masVendidos1 article .textoArriba{
+  margin-top: 3px;
+}
+
+.extra1 article .textoArriba{
+  margin-top: 3px;
+}
+
+.masVendidos1 article .textoAbajo{
+  margin-top: auto;
+}
+
+.extra1 article .textoAbajo{
+  margin-top: auto;
+}
+
+.masVendidos1 article .textoAbajo .botonVerMas{
+  margin-top: 11px;
+}
+
+.extra1 article .textoAbajo .botonVerMas{
+  margin-top: 11px;
+}
 
 /* PAGINA PRODUCT */
+
 section.mainproduct {
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
@@ -380,6 +412,7 @@ article.review {
 }
 
 /* PAGINA LOGIN */
+
 div.paglogin {
   background-image: url(../img/DISEÑO2.png);
   border-radius: 25px;
@@ -486,9 +519,11 @@ input.emailypassword {
   border-radius: 10px;
   padding-bottom: 15px;
   margin-bottom: 10px;
+  outline: none;
 }
 
 /* CATEGORIA */
+
 body.cuerpoCategoria {
   background-image: url("../img/DISEÑO.png");
   background-size: 100% 100%;
@@ -516,7 +551,7 @@ h2.tituloCategoria {
   border-radius: 25px;
   font-weight: 400;
   font-style: normal;
-  font-size: xx-large;
+  font-size: 42px;
   font-weight: bold;
   color: white;
   text-align: center;
@@ -524,7 +559,8 @@ h2.tituloCategoria {
   padding-top: 15px;
 }
 
-/* Search */
+/* SEARCH */
+
 body.cuerpoSearch {
   background-image: url("../img/backgorundCircular.png");
   background-size: 100% 100%;
@@ -533,26 +569,15 @@ body.cuerpoSearch {
 h2.tituloSearch {
   font-family: "Bebas Neue", sans-serif;
   background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
   font-weight: 400;
   font-style: normal;
-  font-size: xx-large;
+  font-size: 42px;
   font-weight: bold;
   color: white;
   text-align: center;
   padding-bottom: 15px;
   padding-top: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-section.fondoBusqueda {
-  /* es un fondo semi transparente que contendrá toda la info del albúm buscado*/
-  background-color: rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 0px 25px 0px;
-  border-radius: 25px;
-  margin: 50px 150px 0px 150px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 h4.tituloAlbumSearch {
@@ -591,7 +616,8 @@ h4.precioSearch {
   text-align: center;
 }
 
-/*REGISTER*/
+/* REGISTER */
+
 .bodyregister {
   background-image: url("../img/backgroundregister.png");
 }
@@ -771,8 +797,9 @@ input.emailypassword {
 
 /* RESPONSIVE */
 
-/* PRODUCTO */
 @media (max-width: 420px) {
+
+  /* PRODUCTO */
   section.mainproduct {
     flex-direction: column;
     align-items: center;
@@ -790,10 +817,6 @@ input.emailypassword {
     height: auto;
   }
 
-  .linksNavegacion {
-    margin-bottom: 15px;
-  }
-
   article.review {
     flex-direction: column;
   }
@@ -802,7 +825,56 @@ input.emailypassword {
     font-size: larger;
   }
 
-  /* HOME y CATALOGO */
+  /* HOME y CATÁLOGO */
+
+  header.contenedorPadre{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 12px;
+  }
+
+  .logoContenido{ 
+    display: flex; 
+    align-items: center; 
+  }
+
+  img.logoPrincipal{ 
+    height: 42px; 
+    width: auto; 
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+
+  .search{               
+    margin-left: auto;             
+    align-items: center;
+    width: auto;           
+    padding: 4px;  
+    margin-right: 20px; 
+    margin-top: 10px;                           
+  }
+
+  .search input{
+    width: 160px;         
+    padding: 8px 10px;   
+    font-size: 12.5px;
+    border-radius: 9999px;
+  }
+
+  .linksNavegacion{  
+    order: 2; /*para que quede abajo del logo y search*/          
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  .linksNavegacion .navlinks{
+    justify-content: center;
+  }
+  
+  .linksNavegacion .navlinks li{
+    margin: 0 7px 6px;       
+  }
 
   section.tienda {
     flex-direction: column;
@@ -826,37 +898,23 @@ input.emailypassword {
   section.derecha {
     width: 100%;
     padding: 0;
-
   }
 
-  section.masvendidos {
+  section.masVendidos {
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0;
   }
 
-  section.masvendidos1 {
+  section.masVendidos1 {
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0;
   }
 
-  section.masvendidos1 article {
-    width: 100%;
-    margin-bottom: 24px;
-  }
-
-  section.masvendios2 {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-
-  }
-
-  section.masvendidos2 article {
+  section.masVendidos1 article {
     width: 100%;
     margin-bottom: 24px;
   }
@@ -873,7 +931,8 @@ input.emailypassword {
     margin-bottom: 24px;
   }
 
-  /*LOGIN*/
+  /* LOGIN */
+
   div.paglogin {
     flex-direction: column;
     height: auto;
@@ -900,4 +959,23 @@ input.emailypassword {
   button.botonlogin2 {
     width: 35%;
   }
+
+  /* SEARCH RESULTS */
+
+  section.fondoBusqueda {
+    flex-direction: column;
+    align-items: center;
+    margin: 12px;
+    padding: 12px;
+  }
+
+  article.albumesCategoria {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  section.derecha h2{
+    font-size: 35px;
+  }
+
 }
