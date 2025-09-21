@@ -13,7 +13,7 @@ header.contenedorPadre {
   justify-content: space-around;
   padding: 16px 20px;
   background-color: #130102;
-  border-bottom: 0.3px solid rgba(250, 250, 250, 0.2);
+  border-bottom: 0.3px solid rgba(250, 250, 250, 0.14);
 }
 
 img.logoPrincipal {
@@ -126,6 +126,7 @@ footer.contenidoDelPie {
 
 main.cuerpo {
   background-image: url("../img/DISEÑO.png");
+  display: flex;
 }
 
 section.tienda {
@@ -327,6 +328,13 @@ a.botonVerMas:hover {
 }
 
 /* PAGINA PRODUCT */
+main.cuerpoProduct {
+  background-image: url("../img/DISEÑO.png");
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 35px;
+}
 
 section.mainproduct {
   background-color: rgba(0, 0, 0, 0.2);
@@ -339,12 +347,13 @@ section.mainproduct {
 }
 
 section.descripcionproduct {
-  height: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 img.portadaproduct {
-  width: 400px;
-  height: 400px;
+  width: 37%;
+  height: 37%;
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -428,33 +437,33 @@ article.review {
 
 div.paglogin {
   background-image: url(../img/DISEÑO2.png);
+  background-size: cover;
+  background-position: center;
   border-radius: 25px;
   display: flex;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  height: 400px;
-  width: 90%;
-  margin: 100px;
+  box-shadow: 1px 2px 50px 1px rgba(0, 0, 0, 0.4);
+  height: 460px;
+  width: 80%;
+  margin: 80px auto;
+  padding: 16px;
 }
 
 section.registerlogin {
-  border-radius: 20px;
-  height: 100%;
-  width: 57%;
+  width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-p.descripcionlogin {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: whitesmoke;
-  align-self: center;
-  padding-bottom: 25px;
-  font-size: large;
+p.descripcionlogin{
+  font-size: 19px;
+  text-align: center;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #f5f5f5;
+  margin-bottom: 3px;
 }
+
 section.login {
   border-radius: 20px;
   height: 100%;
@@ -466,34 +475,61 @@ section.login {
 
 h2.titulologin {
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: xx-large;
-  font-weight: bold;
-  color: #F9D98A;
-  align-self: center;
-  padding-bottom: 15px;
+  font-size: 45px;
+  color: #E2AC37;
+  text-align: center;
+  margin: 0;
 }
 
 label.username1 {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
+  display: block;
   font-weight: 400;
-  font-style: normal;
-  color: whitesmoke;
-  align-self: center;
-  padding-bottom: 15px;
-  font-size: x-large;
+  font-size: 17px;
+  margin: 10px auto 6px;
+  width: 40%;
+  font-family: "Inter", sans-serif;
+  color: whitesmoke
 }
 
 input.emailypassword {
   width: 40%;
   align-self: center;
   background-color: whitesmoke;
+  color: #1a1a1a;
+  border: 1px solid rgba(0,0,0,.25);
   border-radius: 10px;
-  padding-bottom: 15px;
-  margin-bottom: 10px;
+  height: 36px;
+  padding: 0 12px;
+  margin: 0 0 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
   outline: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,.07);
+}
+
+input.emailypassword::placeholder{
+  color: #8a8a8a;
+  font-weight: 400;
+}
+
+button.botonlogin{
+  display: block;
+  align-self: center;
+  margin-top: 20px;
+  padding: 8px 16px;
+  background: #E2AC37;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,.25);
+  border-radius: 12px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  letter-spacing: .3px;
+  cursor: pointer;
+  transition: background-color .2s ease;
+}
+
+button.botonlogin:hover{
+  background: #ffd16e;
 }
 
 /* CATEGORIA */
@@ -522,7 +558,7 @@ article.albumesCategoria {
 h2.tituloCategoria {
   font-family: "Bebas Neue", sans-serif;
   background-color: rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 25px;
   font-weight: 400;
   font-style: normal;
@@ -546,7 +582,7 @@ h2.tituloSearch {
   font-family: "Bebas Neue", sans-serif;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.13);
   font-weight: 400;
   font-style: normal;
   font-size: 42px;
@@ -623,24 +659,11 @@ section.noResults {
   background-image: url("../img/backgroundregister.png");
 }
 
-main.cuerpo {
+main.cuerpo1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
-}
-
-div.paglogin {
   background-image: url("../img/DISEÑO.png");
-  background-size: 100%;
-  border-radius: 25px;
-  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.3);
-  border: 0px;
-  display: flex;
-  height: 500px;
-  width: 80%;
-  margin: 100px;
-  justify-content: space-around;
 }
 
 .contenedor {
@@ -659,18 +682,6 @@ section.registerlogin {
   flex-direction: column;
 }
 
-p.descripcionlogin {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: whitesmoke;
-  align-self: center;
-  padding-bottom: 25px;
-  font-size: large;
-}
-
-
 section.login {
   border-radius: 20px;
   height: 100%;
@@ -679,27 +690,6 @@ section.login {
   justify-content: center;
   flex-direction: column;
   align-content: center;
-}
-
-h2.titulologin {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: xx-large;
-  font-weight: bold;
-  color: #F9D98A;
-  align-self: center;
-}
-
-label.username1 {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: whitesmoke;
-  align-self: center;
-  margin: 10px 0px 5px 0px;
-  font-size: x-large;
 }
 
 .botonlogin {
@@ -749,44 +739,67 @@ input.emailypassword {
 }
 
 .divcheckbox {
-  font-family: "Nunito", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 14px;
   color: whitesmoke;
   align-self: center;
-  padding-top: 20px;
-  font-size: large;
+  padding-top: 14px;
 }
 
 /* RESPONSIVE */
 
 @media (max-width: 420px) {
-
-  /* PRODUCTO */
+  /*PRODUCTO*/
+  main.cuerpoProduct {
+    padding-bottom: 20px;
+  }
   section.mainproduct {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin: 12px;
     padding: 12px;
   }
-
   img.portadaproduct {
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin-bottom: 20px;
   }
-
   section.descripcionproduct {
     height: auto;
+    width: 90%;
   }
-
+  h2.tituloalbum {
+    font-size: 28px;
+    text-align: center;
+  }
+  h3.marcaalbum {
+    font-size: 20px;
+    text-align: center;
+  }
+  p.descripcionalbum {
+    font-size: 16px;
+    text-align: center;
+  }
+  h3.precioalbum {
+    font-size: 20px;
+    text-align: center;
+  }
+  h3.infoalbum {
+    font-size: 16px;
+    text-align: center;
+  }
+  article.hastag {
+    justify-content: center;
+  }
+  span.hastagg {
+    font-size: 14px;
+  }
   article.review {
-    flex-direction: column;
-  }
-
-  h4 {
-    font-size: larger;
+    font-size: 14px;
+    justify-content: center;
   }
 
   /* HOME y CATÁLOGO */
