@@ -43,14 +43,14 @@
             <section class="login">
                 <h2 class="titulologin">REGISTRATE</h2>
                 <form class="contenedor" action="./index.html" method="get">
-                    <label class="username1">Ingresar email</label>
-                    <input required class="emailypassword" id="usuario" type="email" name="user" value ="" placeholder="Email"><span></span>
-                    <label class="username1">Ingresar contraseña</label>
-                    <input required class="emailypassword" type="password" name = "contraseñauser" value ="" placeholder="Contraseña">
-                    <label class="username1">Repetir contraseña</label>
-                    <input required class="emailypassword" name ="constraseñauser2" value ="" type="password" placeholder="Repetir contraseña">
+                    <label for ="mail" class="username1">Ingresar email</label>
+                    <input required class="emailypassword" id="mail" type="email" name="user" value ="" placeholder="Email"><span></span>
+                    <label for ="contraseñas"class="username1">Ingresar contraseña</label>
+                    <input id="contraseñas" required class="emailypassword" type="password" name = "contraseñauser" value ="" placeholder="Contraseña">
+                    <label for="repetircontraseña" class="username1">Repetir contraseña</label>
+                    <input required class="emailypassword" id= "repetircontraseña"name ="constraseñauser2" value ="" type="password" placeholder="Repetir contraseña">
                     <div class="divcheckbox">
-                        <input type="checkbox" id="programacion" name="condiciones" value="">
+                        <input id="Condiciones" type="checkbox" id="programacion" name="condiciones" value="">
                         <label for="Condiciones">Acepto los términos y condiciones.</label>
                     </div>
                     <button class="botonlogin" type="summit">Registrarse</button>
