@@ -1,6 +1,8 @@
 fetch("https://dummyjson.com/products/category-list")
-  .then((res) => res.json())
-  .then((data) => {
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
     const categoryMenu = document.querySelector(".listaCategorias");
     let categoriesHtml = "";
     for (let i = 0; i < data.length; i++) {
@@ -10,7 +12,9 @@ fetch("https://dummyjson.com/products/category-list")
     }
     categoryMenu.innerHTML = categoriesHtml;
   })
-  .catch((err) => console.error("Error fetching categories:", err));
+  .catch(function(error) {
+    console.error("Error fetching categories:", error);
+  });
 
 function url(apiUrl) {
   return apiUrl;

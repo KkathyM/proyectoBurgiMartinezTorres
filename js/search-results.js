@@ -5,8 +5,10 @@ let searchTitle = document.querySelector(".tituloSearch");
 searchTitle.innerText = `Search results for: ${search}`;
 
 fetch(`https://dummyjson.com/products/search?q=${search}`)
-.then(res => res.json())
-.then(data => {
+.then(function (response) {
+    return response.json();
+})
+.then(function (data){
     if (data.total === 0 || search === "") {
     let noResultsMessage = document.querySelector(".noResults");
     noResultsMessage.style.display = "block";
@@ -31,12 +33,15 @@ fetch(`https://dummyjson.com/products/search?q=${search}`)
 
     searchResultsList.innerHTML = itemsHtml;
 })
-.catch(err => console.error("Error fetching search results:", err));
-
+.catch(function (error) {
+    console.error("Error fetching search results:", error);
+});
 fetch("https://dummyjson.com/products/category-list")
-  .then((res) => res.json())
-  .then((data) => {
-    let categoryMenu = document.querySelector(".listaCategorias");
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    const categoryMenu = document.querySelector(".listaCategorias");
     let categoriesHtml = "";
     for (let i = 0; i < data.length; i++) {
       categoriesHtml += `
@@ -45,7 +50,9 @@ fetch("https://dummyjson.com/products/category-list")
     }
     categoryMenu.innerHTML = categoriesHtml;
   })
-  .catch((err) => console.error("Error fetching categories:", err));
+  .catch(function(error) {
+    console.error("Error fetching categories:", error);
+  });
 
 function url(apiUrl) {
   return apiUrl;
