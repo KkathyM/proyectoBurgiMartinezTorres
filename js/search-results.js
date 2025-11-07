@@ -12,7 +12,14 @@ fetch(`https://dummyjson.com/products/search?q=${search}`)
     if (data.total === 0 || search === "") {
     let noResultsMessage = document.querySelector(".noResults");
     noResultsMessage.style.display = "block";
-    return; //PREGUNTAR SI PUEDO
+    return;
+    }
+    if (search.length < 3) {
+    let noResultsMessage = document.querySelector(".noResults");
+    let mensaje = document.querySelector("#noresultados");
+    mensaje.innerText = "La búsqueda debe tener al menos 3 caracteres.";
+    noResultsMessage.style.display = "block";
+    return;
     }
     let searchResultsList = document.querySelector(".masVendidos1");
     let itemsHtml = "";
