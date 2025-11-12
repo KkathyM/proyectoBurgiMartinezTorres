@@ -33,7 +33,7 @@ fetch(`https://dummyjson.com/products/${id}`)
         <img class="portadaproduct" src="${data.images[0]}" alt="${nombre}">
             <section class="descripcionproduct">
                 <h2 class="tituloalbum">${data.title}</h2>
-                <h3 class="marcaalbum"><b>Brand:</b> ${id}</h3>
+                <h3 class="marcaalbum"><b>Brand:</b> ${data.brand}</h3>
                 <p class="descripcionalbum"><b>Description: </b>${data.description}.</p>
                 <h3 class="precioalbum"><b>$ ${data.price}</b></h3>
                 <h3 class="infoalbum"><b>Category:</b> ${data.category}</h3>
