@@ -41,13 +41,14 @@
                 </form>
             </section>
             <section class="login">
-                <form class="contenedor" action="./index.html" method="get">
+                <form id="formulariologin" class="contenedor" action="./index.html" method="get">
                     <h2 class="titulologin">INICIAR SESIÓN</h2>
                     <label for="usuario1" class="username1">Ingresar usuario</label>
-                    <input id= "usuario1"required class="emailypassword" placeholder="Email" name="info_email" value="" type="email">
+                    <input id= "usuario1" class="emailypassword" placeholder="Email" name="info_email" value="" type="email">
                     <label for="contraseñalogin"class="username1">Ingresar contraseña</label>
-                    <input id="contraseñalogin"required class="emailypassword" name ="info_constraseña" value = "" placeholder="Contraseña" type="password">
-                    <button class="botonlogin" type="summit">Iniciar Sesión</button>
+                    <input id="contraseñalogin" class="emailypassword" name ="info_constraseña" value = "" placeholder="Contraseña" type="password">
+                    <p class ="username1"></p>
+                    <button class="botonlogin" type="submit">Iniciar Sesión</button>
                 </form>
             </section>
         </div>
@@ -63,7 +64,7 @@
             </ul>
         </div>
     </footer>
-
+<script src="js/login.js"></script>
 </body>
 
 </html>
