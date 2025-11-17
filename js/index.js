@@ -1,3 +1,5 @@
+
+// LISTA DE CAGORÍAS EN EL MENÚ
 fetch("https://dummyjson.com/products/category-list")
   .then(function(response) {
     return response.json();
@@ -19,3 +21,5 @@ fetch("https://dummyjson.com/products/category-list")
 function url(apiUrl) {
   return apiUrl;
 }
+
+// TARJETA DE PRODUCTO

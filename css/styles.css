@@ -18,8 +18,9 @@ header.contenedorPadre {
 
 img.logoPrincipal {
   width: auto;
-  height: 70px;
+  height: 80px;
   display: block;
+  border-radius: 30px;
 }
 
 img.logoContenido {
