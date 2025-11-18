@@ -8,13 +8,18 @@ formulario.addEventListener('submit', function(event) {
     event.preventDefault(); 
     let emailusuario = campoBuscar.value;
     let contraseñausuario = campoContraseña.value;
-    if (emailusuario == "" || contraseñausuario == "") { 
-        alert("Por favor ingrese la informacion correcta")
+    if (emailusuario == "") { 
+        adicional.innerHTML = "Por favor ingrese el mail correctamente"
+        }
+    else if (contraseñausuario == ""){
+        adicional.innerHTML = "Por favor ingrese la contraseña correctamente"
     }
     else if (contraseñausuario.length < 6) {
-        alert("Por favor ingrese la contraseña necesaria")
+        adicional.innerHTML = "La contraseña es muy corta"
     }
     else {
         this.submit();
+        localStorage.setItem("emailUsuario", emailusuario.toUpperCase()); // ESTO SIRVE PARA QUE SE PONGA EN MAYUSCULA
+        console.log(localStorage)
 }
 })

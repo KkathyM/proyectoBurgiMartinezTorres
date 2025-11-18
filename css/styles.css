@@ -33,7 +33,7 @@ ul.navlinks {
   display: flex;
 }
 
-.linksNavegacion a {
+.linksNavegacion a{
   color: #f3f3f6;
   font-weight: 500;
   text-decoration: none;
@@ -41,6 +41,16 @@ ul.navlinks {
   line-height: 1.6;
   font-family: "Inter", "Roboto", "Arial", sans-serif;
   margin-left: 16px;
+}
+.linksNavegacion p{
+  color: #f3f3f6;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: "Inter", "Roboto", "Arial", sans-serif;
+  margin-left: 16px;
+  cursor: pointer;
 }
 
 .search {
@@ -538,7 +548,16 @@ button.botonlogin{
 button.botonlogin:hover{
   background: #ffd16e;
 }
-
+.username{
+  text-align: center;
+  display: block;
+  font-weight: 400;
+  font-size: 17px;
+  margin: 10px auto 6px;
+  width: 50%;
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 10, 10)
+}
 /* CATEGORIA */
 
 body.cuerpoCategoria {
