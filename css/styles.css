@@ -868,6 +868,7 @@ input.emailypassword {
 
   .linksNavegacion .navlinks {
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .linksNavegacion .navlinks li {
