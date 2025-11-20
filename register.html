@@ -24,6 +24,7 @@
                 <li><a href="./category.html?category=beauty">CATÁLOGO</a></li>
                 <li><a href="./login.html">LOGIN</a></li>
                 <li><a href="./register.html">REGISTER</a></li>
+                <p class="bienvenida"></p>
             </ul>
         </nav>
         <form class="search" action="search-results.html" method="get">
@@ -37,23 +38,27 @@
                 <form class="contenedor" action="./login.html" method="get">
                     <h2 class="titulologin">¡HOLA, BIENVENIDO!</h2>
                     <p class="descripcionlogin"> ¿Ya tenés una cuenta?</p>
-                    <button class="botonlogin" type="summit">Iniciar sesion</button>
+                    <button class="botonlogin" type="submit">Iniciar sesion</button>
                 </form>
             </section>
             <section class="login">
                 <h2 class="titulologin">REGISTRATE</h2>
-                <form class="contenedor" action="./index.html" method="get">
+                <form class="contenedor" id="formularioRegistro" action="./login.html" method="get">
                     <label for ="mail" class="username1">Ingresar email</label>
-                    <input required class="emailypassword" id="mail" type="email" name="user" value ="" placeholder="Email"><span></span>
+                    <input class="emailypassword" id="mail" type="email" name="user" value ="" placeholder="Email">
+
                     <label for ="contraseñas"class="username1">Ingresar contraseña</label>
-                    <input id="contraseñas" required class="emailypassword" type="password" name = "contraseñauser" value ="" placeholder="Contraseña">
-                    <label for="repetircontraseña" class="username1">Repetir contraseña</label>
-                    <input required class="emailypassword" id= "repetircontraseña"name ="constraseñauser2" value ="" type="password" placeholder="Repetir contraseña">
+                    <input id="contraseñaRegistro" class="emailypassword" type="password" name="contraseñauser" value="" placeholder="Contraseña">
+                    
+                    <label for="repetirContraseña" class="username1">Repetir contraseña</label>
+                    <input class="emailypassword" id="repetirContraseña" name="constraseñauser2" value="" type="password" placeholder="Repetir contraseña">
+                    
                     <div class="divcheckbox">
-                        <input required id="Condiciones" type="checkbox" id="programacion" name="condiciones" value="">
-                        <label for="Condiciones">Acepto los términos y condiciones.</label>
+                        <input id="condiciones" type="checkbox" name="condiciones" value="">
+                        <label for="condiciones">Acepto los términos y condiciones.</label>
                     </div>
-                    <button class="botonlogin" type="summit">Registrarse</button>
+                    <button class="botonlogin" type="submit">Registrarse</button>
+                    <p class ="username"></p>
                 </form>
             </section>
         </div>
@@ -68,6 +73,10 @@
             </ul>
         </div>
     </footer>
+    
+    <script src="./js/saludo.js"></script>
+    <script src="./js/register.js"></script>
+    <script src="./js/logout.js"></script>
 
 </body>
 

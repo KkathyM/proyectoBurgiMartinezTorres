@@ -6,7 +6,7 @@ logout.addEventListener(`click`,function(evento){
     evento.preventDefault();
     localStorage.removeItem("emailUsuario");
     login.style.display = "block"
-    register.style.display = "none"
+    register.style.display = "block"
     window.location.reload(); // sirve para que la pagina cambie
 
 })
