@@ -167,7 +167,20 @@ section.izquierda {
   /* espaciado */
   margin-bottom: 12px;
 }
-
+.tituloCategorias1 {
+  color: #E2AC37;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.6px;
+  /* espaciado */
+  margin-bottom: 12px;
+}
+p.descripcionRandom{
+  color:whitesmoke;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
 /* Lista categorías */
 ul.listaCategorias {
   list-style: none;

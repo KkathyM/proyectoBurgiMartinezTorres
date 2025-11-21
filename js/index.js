@@ -1,3 +1,5 @@
+// numero random para producto random de 1 a 194 inclusive
+let randomId = Math.floor(Math.random() * 194) + 1;
 
 // LISTA DE CAGORÍAS EN EL MENÚ
 fetch("https://dummyjson.com/products/category-list")
@@ -5,7 +7,7 @@ fetch("https://dummyjson.com/products/category-list")
     return response.json();
   })
   .then(function(data) {
-    const categoryMenu = document.querySelector(".listaCategorias");
+    let categoryMenu = document.querySelector(".listaCategorias");
     let categoriesHtml = "";
     for (let i = 0; i < data.length; i++) {
       categoriesHtml += `
@@ -21,13 +23,24 @@ fetch("https://dummyjson.com/products/category-list")
 function url(apiUrl) {
   return apiUrl;
 }
-
+// CARGA PRODUCTO RANDOM
+fetch(`https://dummyjson.com/products/${randomId}`)
+  .then(function (response) {
+      return response.json();
+  })
+  .then(function (data) {
+      let discoverLink = document.querySelector(".izquierda .botonVerMas");
+      discoverLink.href = `./product.html?id=${data.id}`;
+  })
+  .catch(function (error) {
+      console.log('El error es: ' + error);
+  });
 // RECUADROS POR PRODUCTO
 function cargarProductos(categoria, contenedorId) {
   fetch(`https://dummyjson.com/products/category/${categoria}`)
     .then(response => response.json())
     .then(data => {
-      const contenedor = document.getElementById(contenedorId);
+      let contenedor = document.getElementById(contenedorId);
 
       data.products.slice(0,10).forEach(producto => { //limitamos la cantidad de productos a 10
         contenedor.innerHTML += `
