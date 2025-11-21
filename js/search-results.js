@@ -48,7 +48,7 @@ fetch("https://dummyjson.com/products/category-list")
     return response.json();
   })
   .then(function(data) {
-    const categoryMenu = document.querySelector(".listaCategorias");
+    let categoryMenu = document.querySelector(".listaCategorias");
     let categoriesHtml = "";
     for (let i = 0; i < data.length; i++) {
       categoriesHtml += `

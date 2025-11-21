@@ -173,7 +173,8 @@ section.izquierda {
   font-size: 25px;
   letter-spacing: 0.6px;
   /* espaciado */
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  margin-top: 18px;
 }
 p.descripcionRandom{
   color:whitesmoke;
